@@ -1,0 +1,8 @@
+20240127	01:59:48	60121790-2a88-4f68-85f1-bdeba441fcfd	ReferenceError:logEvents is not defined
+20240127	02:01:10	c9d1ffc5-dd72-41c6-b299-614f08cecc76	ReferenceError:logEvents is not defined
+20240127	02:02:37	3c17eea4-7f1e-4179-8d9d-f93b356cb790	Error:Not allowed by CORS
+20240127	02:05:36	d516b47e-fe61-477c-8d52-05a99e35bda7	Error:Not allowed by CORS
+20240127	02:05:37	d0257137-11c8-4bd7-b0f9-3b4a63b379e1	Error:Not allowed by CORS
+20240130	09:48:52	177777d7-6bad-4a30-b697-820cc1411d75	Error:ENOENT: no such file or directory, stat 'C:\Users\Lenovo pc\Desktop\projects\Node Js\Tut 6\views\subdir\test.html'
+20240130	18:51:14	10b7c8f1-1cf8-44b9-a000-f126b5246e4a	SyntaxError:Unexpected string in JSON at position 13
+20240130	18:52:06	90e545c0-60a5-4137-a264-25d27f4ac323	SyntaxError:Unexpected token } in JSON at position 38

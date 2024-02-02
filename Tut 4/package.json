@@ -1,0 +1,19 @@
+{
+  "name": "tut-4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server",
+    "start": "node server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^3.2.0",
+    "uuid": "^9.0.1"
+  },  
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

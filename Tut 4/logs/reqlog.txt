@@ -1,0 +1,2 @@
+20240114	22:46:15	cf90f298-faf2-4555-88f7-dad4c862a86a	/newPage	GET
+20240114	22:46:15	48d01bc2-171c-4c8d-b9e3-6876fa2cca05	/img/mountain.jpeg	GET
