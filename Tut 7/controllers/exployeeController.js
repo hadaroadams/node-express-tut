@@ -1,35 +1,62 @@
- const data = {}
- data.employees = require('../model/emplyees.json')
+ const data = {
+    employees: require('./../model/emplyees.json'),
+    setEmployee:(data)=>{this.employees = data}
+ }
+//  data.employees = require('../model/emplyees.json')
+ 
 
 
-const getAllEmployees=(req,resp)=>{
+const getAllEmployees= (req,resp) =>{
     resp.json(data.employees)
 }
 
 const createEmployee=(req,res)=>{
-    res.json({
-        "name":req.body.name, 
-        "email":req.body.email,
-    })
+    const newEmployee ={
+        id:data.employees[data.employees.length-1].id+1 || 1,
+        name:req.body.name,
+        email:req.body.email,
+    }
+    console.log(newEmployee)
+    if(!newEmployee.name||!newEmployee.email){
+        return res.status(400).json({'messaga':'name and email is required.'})
+    }
+    data.setEmployee([...data.employees , newEmployee])
+    console.log(data.employees)
+    res.json(data.employees)
 }
 
 const updateEmployee =(req,res)=>{
-    res.json({
-        "name":req.body.name, 
-        "email":req.body.email,
-    })
+    const employee = data.employees.find((emp)=>emp.id===parseInt(req.body.id))
+
+    if(!employee){
+       return res.status(400).json({"message" : `Employee with ID ${req.body.id} not found`})
+    }
+    if(req.body.name)employee.name = req.body.name
+    if(req.body.email)employee.email = req.body.email
+
+    const filterdArray = data.employees.filter((emp)=>emp.id!==employee.id)
+    const unsortedArray =[...filterdArray,employee]
+    data.setEmployee(unsortedArray.sort((a,b)=>a.id - b.id))
+    res.json(data.employees)
 }
 
 const deleteEmployee=(req,res)=>{
-    res.json({
-        "id":req.body.id
-    })
+    const employee = data.employees.find((emp)=>emp.id===parseInt(req.body.id))
+
+    if(!employee){
+       return res.status(400).json({"message" : `Employee with ID ${req.body.id} not found`})
+    }
+    const filterdArray = data.employees.filter((emp)=>emp.id!==employee.id)
+    data.setEmployee([...filterdArray])
+    res.json(data.employees)
 }
 
 const getEmployee=(res,req)=>{
-        res.json({
-            "id" : req.params.id
-        })
+        const employee = data.employees.find(emp=>emp.id===parseInt(req.param.id))
+        if(!employee){
+            return res.status(400).json({"message" : `Employee with ID ${req.body.id} not found`})
+        }
+        res.json(employee)
 }
 
 module.exports={getAllEmployees,deleteEmployee,getEmployee,updateEmployee,createEmployee}
