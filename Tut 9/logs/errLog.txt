@@ -1,0 +1,22 @@
+20240127	01:59:48	60121790-2a88-4f68-85f1-bdeba441fcfd	ReferenceError:logEvents is not defined
+20240127	02:01:10	c9d1ffc5-dd72-41c6-b299-614f08cecc76	ReferenceError:logEvents is not defined
+20240127	02:02:37	3c17eea4-7f1e-4179-8d9d-f93b356cb790	Error:Not allowed by CORS
+20240127	02:05:36	d516b47e-fe61-477c-8d52-05a99e35bda7	Error:Not allowed by CORS
+20240127	02:05:37	d0257137-11c8-4bd7-b0f9-3b4a63b379e1	Error:Not allowed by CORS
+20240130	09:48:52	177777d7-6bad-4a30-b697-820cc1411d75	Error:ENOENT: no such file or directory, stat 'C:\Users\Lenovo pc\Desktop\projects\Node Js\Tut 6\views\subdir\test.html'
+20240130	18:51:14	10b7c8f1-1cf8-44b9-a000-f126b5246e4a	SyntaxError:Unexpected string in JSON at position 13
+20240130	18:52:06	90e545c0-60a5-4137-a264-25d27f4ac323	SyntaxError:Unexpected token } in JSON at position 38
+20240203	23:59:53	1ea73e0c-b8e0-48b1-b0c9-a666c5f449cc	TypeError:Cannot read properties of undefined (reading 'id')
+20240204	00:00:03	c11c6417-de1d-45eb-a6ec-a94241aec691	SyntaxError:Unexpected end of JSON input
+20240204	00:00:16	6c80d778-e256-47a1-8f38-093a1ac51a6d	SyntaxError:Unexpected end of JSON input
+20240204	00:01:49	af4319dd-e467-423a-bae0-124fafbbcd5a	TypeError:Cannot read properties of undefined (reading 'id')
+20240204	00:01:50	e9f75cf1-fc21-48b1-9785-005cf88add5f	TypeError:Cannot read properties of undefined (reading 'id')
+20240204	00:01:58	675f0638-feb9-417d-b8b5-55504fce60e2	TypeError:Cannot read properties of undefined (reading 'id')
+20240204	00:07:46	82c80618-9e1e-4fe7-8260-fe87d26c292d	TypeError:Cannot read properties of undefined (reading 'id')
+20240204	00:10:15	523ed97b-539b-463e-a57a-39cf5f804bfc	TypeError:Cannot read properties of undefined (reading 'id')
+20240204	00:10:33	3377a165-e6d4-4e94-b38f-d64f545c5243	TypeError:Cannot read properties of undefined (reading 'id')
+20240204	00:10:34	ce0c1ef0-d3c3-4a62-bc36-699eb5de158b	TypeError:Cannot read properties of undefined (reading 'id')
+20240204	00:10:35	179e2ba4-e02a-4c3d-9568-46c9be5dbf80	TypeError:Cannot read properties of undefined (reading 'id')
+20240204	00:12:48	03d35d2d-0be0-42eb-87d4-2d381230fac4	TypeError:Cannot read properties of undefined (reading 'id')
+20240204	00:15:16	0ff89f4a-3ba7-4298-86ca-22534b69f4e1	TypeError:Cannot read properties of undefined (reading 'id')
+20240204	00:17:47	f6ad4d8b-27cb-4fc5-b14a-7a59fa281ec5	TypeError:Cannot read properties of undefined (reading 'id')
