@@ -1,9 +1,9 @@
- const data = {
+const data = {
     employees: require('./../model/emplyees.json'),
     setEmployee:function(data1){
         this.employees = data1
         }
- }
+}
 //  data.employees = require('../model/emplyees.json')
 
 
@@ -12,7 +12,7 @@ const getAllEmployees= (req,resp) =>{
     resp.json(data.employees)
 }
 
-const createEmployee=(req,res)=>{
+const createEmployee = (req,res)=>{
 
     const newEmployee = {
         id:data.employees[data.employees.length-1].id+1 || 1,

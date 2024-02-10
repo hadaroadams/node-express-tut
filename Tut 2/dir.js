@@ -1,4 +1,4 @@
-const { error } = require('console')
+// const { error } = require('console')
 const fs = require('fs')
 
 if(!fs.existsSync('./../Tut 3')){

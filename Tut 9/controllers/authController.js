@@ -32,13 +32,14 @@ const handleLogIn=async(req,res)=>{
                 process.env.REFRESH_TOKEN_SECRET,
                 {expiresIn:'1d'}
             );
-            // console.log(accessToken,refeshToken)
+            console.log(accessToken,refeshToken)
             const otherUsers = userDB.users.filter((person)=>person.userName!==isUserExiting.userName)
             const currentUser= {...isUserExiting,refeshToken}
             userDB.setUsers(([...otherUsers,currentUser]))
             await fsPromise.writeFile(path.join(__dirname,"..",'model',"users.json"),JSON.stringify(userDB.users))
             res.cookie("jwt",refeshToken,{httpOnly:true,maxAge:24*60*60*1000})
             res.json({accessToken })
+            console.log('Done')
         }else{
             res.sendStatus(401)
         }

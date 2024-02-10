@@ -40,8 +40,8 @@ const fileOps = async()=>{
         await fsPromise.unlink(path.join(__dirname,'files','starter.txt'))
         await fsPromise.writeFile(path.join(__dirname,'files','newFile.txt'),data)
         await fsPromise.appendFile(path.join(__dirname,'files','newFile.txt'), '\n\n This is Boolshit')
-        await fsPromise.rename(path.join(__dirname,'files','newFile.txt'),path.join(__dirname,'files','newFile.txt'))
-        const newData = await fsPromise.readFile(path.join(__dirname,'files','newFile.txt'),'utf8')
+        await fsPromise.rename(path.join(__dirname,'files','newFile.txt'),path.join(__dirname,'files','oldFile.txt'))
+        const newData = await fsPromise.readFile(path.join(__dirname,'files','oldFile.txt'),'utf8')
         console.log(newData)
     }catch(error){
         throw error
